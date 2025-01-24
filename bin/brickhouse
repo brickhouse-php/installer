@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = new \Brickhouse\Console\Console('Brickhouse Installer', '1.0.0-alpha.1');
+$app->addCommand(\Brickhouse\Installer\NewCommand::class);
+
+$status = $app->run();
+
+exit($status);
