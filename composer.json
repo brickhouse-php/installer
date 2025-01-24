@@ -33,15 +33,5 @@
         "psr-4": {
             "Brickhouse\\Installer\\": "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../framework/src/Brickhouse/Console"
-        },
-        {
-            "type": "path",
-            "url": "../framework/src/Brickhouse/Process"
-        }
-    ]
+    }
 }
