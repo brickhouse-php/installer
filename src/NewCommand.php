@@ -178,7 +178,7 @@ final class NewCommand extends Command
     protected function build(): int
     {
         $commands = [
-            $this->composerBinary . " create-project brickhouse/brickhouse \"{$this->directory}\" dev-main --remove-vcs --prefer-dist --no-scripts --repository '{\"type\": \"path\", \"url\": \"/Users/max/Documents/Projects/brickhouse/brickhouse\"}' --ansi",
+            $this->composerBinary . " create-project brickhouse/brickhouse \"{$this->directory}\" dev-main --remove-vcs --prefer-dist --no-scripts --ansi",
             $this->composerBinary . " run post-root-package-install -d \"{$this->directory}\"",
         ];
 
